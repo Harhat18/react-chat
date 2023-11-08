@@ -1,21 +1,23 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./navbar.style.scss";
 import { BiLogOut } from "react-icons/bi";
+import { signOut } from "@firebase/auth";
+import { auth } from "../../firebase";
+import { AuthContext } from "../../context/AuthContext";
+
 const Navbar = () => {
+  const { currentUser } = useContext(AuthContext);
   return (
     <div className="navbar">
       {/* <span className="logo">React Chat</span> */}
       <div className="user">
         <div className="userCard">
-          <img
-            src="https://images.pexels.com/photos/2076596/pexels-photo-2076596.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt=""
-          />
-          <span> Harun Hatiboğlu</span>
+          <img src={currentUser.photoURL} alt="" />
+          <span>{currentUser.displayName}</span>
         </div>
 
         <button>
-          <BiLogOut size={20} color="white" />
+          <BiLogOut onClick={() => signOut(auth)} size={20} color="white" />
         </button>
       </div>
     </div>

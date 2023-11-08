@@ -1,6 +1,6 @@
 import React from "react";
 import "./sidebar.style.scss";
-import Navbar from "../navbar/navbar";
+import Navbar from "../navbar/Navbar";
 import Search from "../search/Search";
 import Chats from "../../components/chats/Chats";
 const SideBar = () => {

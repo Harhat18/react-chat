@@ -5,7 +5,7 @@ import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth, db, storage } from "../../firebase";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { doc, setDoc } from "firebase/firestore";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Register = () => {
   const [err, setErr] = useState(false);
@@ -84,9 +84,9 @@ const Register = () => {
           <h1>React Chat</h1>
           <p>Mesajlaşmanın tadını çıkar</p>
           <span>Zaten üyeliğin var mı ?</span>
-          <a to="/login">
+          <Link to="/login">
             <button>Giriş</button>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
