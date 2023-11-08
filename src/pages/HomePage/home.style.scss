@@ -1,3 +1,5 @@
+@import "../../style.scss";
+
 .home {
   background: linear-gradient(180deg, #111132, #2c2c42);
   height: 100vh;
@@ -12,5 +14,8 @@
     height: 90%;
     display: flex;
     overflow: hidden;
+    @include tablet {
+      width: 90%;
+    }
   }
 }
