@@ -19,7 +19,6 @@ const Login = () => {
           <form>
             <input type="email" placeholder="E-posta" />
             <input type="password" placeholder="Parola" />
-
             <button>Giriş Yap!</button>
           </form>
         </div>

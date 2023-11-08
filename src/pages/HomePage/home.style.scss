@@ -1,2 +1,16 @@
 .home {
+  background: linear-gradient(180deg, #111132, #2c2c42);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 75%;
+    height: 90%;
+    display: flex;
+    overflow: hidden;
+  }
 }

@@ -1,0 +1,39 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #514e7b;
+  height: 50px;
+  padding: 10px;
+  justify-content: space-between;
+  color: #eae1d7;
+  .logo {
+    font-weight: bold;
+  }
+  .user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .userCard {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    img {
+      background-color: #eae1d7;
+      height: 24px;
+      width: 24px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    button {
+      width: 30px;
+      height: 30px;
+      background-color: transparent;
+      cursor: pointer;
+      border: none;
+      justify-content: center;
+    }
+  }
+}
