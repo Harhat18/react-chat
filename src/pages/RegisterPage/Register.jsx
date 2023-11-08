@@ -1,6 +1,7 @@
 import "./register.style.scss";
 import Add from "../../img/addAvatar.png";
 const Register = () => {
+  const handleSubmit = (e) => {};
   return (
     <div className="formContainer">
       <div className="formWrapper">
@@ -8,7 +9,7 @@ const Register = () => {
           <div className="titleContainer">
             <span className="title">Yeni Üye Kayıt</span>
           </div>
-          <form>
+          <form onSubmit={handleSubmit}>
             <input type="text" placeholder="Kullanıcı Adı" />
             <input type="email" placeholder="E-posta" />
             <input type="password" placeholder="Parola" />
