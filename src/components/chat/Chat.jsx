@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./chat.style.scss";
 import { AiOutlineUserAdd } from "react-icons/ai";
 import { AiOutlineVideoCamera } from "react-icons/ai";
 import { CgMoreAlt } from "react-icons/cg";
 import Messages from "../messages/Messages";
 import Input from "../input/Input";
+import { ChatContext } from "../../context/ChatContext";
 
 const Chat = () => {
+  const { data } = useContext(ChatContext);
   return (
     <div className="chat">
       <div className="chatInfo">
-        <span>Fatma</span>
+        <span>{data.user?.displayName}</span>
         <div className="chatIcons">
           <AiOutlineUserAdd size={20} />
           <AiOutlineVideoCamera size={20} />
