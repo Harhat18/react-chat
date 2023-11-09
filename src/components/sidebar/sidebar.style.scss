@@ -1,4 +1,8 @@
+@import "../../style/style.scss";
 .sidebar {
   flex: 1;
   background-color: #eae1d7;
+  @include mobile {
+    flex-basis: 20%;
+  }
 }

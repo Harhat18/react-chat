@@ -1,13 +1,21 @@
+@import "../../style/style.scss";
+
 .search {
   border-bottom: 1px solid gray;
 }
 .searcForm {
   padding: 10px;
+  @include mobile {
+    max-width: 20px;
+  }
   input {
     background-color: transparent;
     border: none;
     outline: none;
     &::placeholder {
+      @include mobile {
+        font-size: 10px;
+      }
     }
   }
 }

@@ -1,6 +1,10 @@
+@import "../../style/style.scss";
 .chat {
   flex: 2;
   color: white;
+  @include mobile {
+    flex-basis: 80%;
+  }
   .chatInfo {
     height: 50px;
     background-color: #eae1d7;

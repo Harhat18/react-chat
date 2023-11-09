@@ -1,3 +1,4 @@
+@import "../../style/style.scss";
 .navbar {
   display: flex;
   align-items: center;
@@ -22,6 +23,9 @@
     }
     span {
       text-transform: capitalize;
+      @include mobile {
+        display: none;
+      }
     }
     img {
       background-color: #eae1d7;
