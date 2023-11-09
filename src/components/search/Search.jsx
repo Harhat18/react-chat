@@ -1,24 +1,10 @@
-import { useContext, useState } from "react";
+import useSearchLogic from "./search.logic";
 import "./search.style.scss";
-import { AuthContext } from "../../context/AuthContext";
-import { searchUsers, handleSelectUser } from "./search.logic";
+
 const Search = () => {
-  const [username, setUsername] = useState("");
-  const [user, setUser] = useState(null);
-  const [err, setErr] = useState(false);
+  const { err, handleKey, handleSelect, username, setUsername, user } =
+    useSearchLogic();
 
-  const { currentUser } = useContext(AuthContext);
-
-  const handleSearch = () => {
-    searchUsers(username, setUser, setErr);
-  };
-  const handleKey = (e) => {
-    e.code === "Enter" && handleSearch();
-  };
-
-  const handleSelect = () => {
-    handleSelectUser(currentUser, user, setUser, setUsername); // Use the function from searchLogic
-  };
   return (
     <div className="search">
       <div className="searcForm">
@@ -33,9 +19,9 @@ const Search = () => {
       {err && <span>Kullanıcı Bulunamadı</span>}
       {user && (
         <div className="userChat" onClick={handleSelect}>
-          <img src={user.photoURL} alt="" />
+          <img src={user?.photoURL} alt="" />
           <div className="userChatInfo">
-            <span>{user.displayName}</span>
+            <span>{user?.displayName}</span>
           </div>
         </div>
       )}

@@ -2,8 +2,6 @@ import React, { useContext, useState } from "react";
 import "./input.style.scss";
 import { IoIosAttach } from "react-icons/io";
 import { RiImageAddLine } from "react-icons/ri";
-import Img from "../../img/img.png";
-import Attach from "../../img/attach.png";
 
 import {
   arrayUnion,

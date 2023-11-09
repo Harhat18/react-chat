@@ -27,7 +27,7 @@ const Message = ({ message }) => {
           }
           alt=""
         />
-        <span>just now</span>
+        <span>şimdi</span>
       </div>
       <div className="messageContent">
         <p>{message.text}</p>
