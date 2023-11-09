@@ -89,6 +89,9 @@
           width: 100px;
           margin-top: 20px;
         }
+        p {
+          display: flex;
+        }
         label {
           display: flex;
           align-items: center;
@@ -96,6 +99,12 @@
           gap: 10px;
           img {
             width: 32px;
+          }
+          .profil {
+            border: 2px solid black;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
           }
         }
       }

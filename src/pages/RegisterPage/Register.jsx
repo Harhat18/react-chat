@@ -10,7 +10,24 @@ import { Link, useNavigate } from "react-router-dom";
 const Register = () => {
   const [err, setErr] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
   const navigate = useNavigate();
+
+  const handleImageChange = (e) => {
+    const file = e.target.files[0];
+
+    if (file) {
+      // Read and display the selected image
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        setSelectedImage(event.target.result);
+      };
+      reader.readAsDataURL(file);
+    } else {
+      setSelectedImage(null);
+    }
+  };
 
   const handleSubmit = async (e) => {
     setLoading(true);
@@ -71,12 +88,26 @@ const Register = () => {
             <input type="text" placeholder="Kullanıcı Adı" />
             <input type="email" placeholder="E-posta" />
             <input type="password" placeholder="Parola" />
-            <input style={{ display: "none" }} type="file" id="file" />
-            <label htmlFor="file">
-              <img src={Add} alt="" />
-              <span>Profil resmini seç</span>
-            </label>
-            <button>Üye Ol!</button>
+            <input
+              style={{ display: "none" }}
+              type="file"
+              id="file"
+              onChange={handleImageChange}
+            />
+
+            {selectedImage ? (
+              <label htmlFor="file">
+                <img className="profil" src={selectedImage} alt="Selected" />
+              </label>
+            ) : (
+              <label htmlFor="file">
+                <img src={Add} alt="" />
+                <span>Profil resmini seç</span>
+              </label>
+            )}
+
+            <button disabled={loading}>Üye Ol!</button>
+            {loading && <p>Resim yükleniyor lütfen bekleyin... </p>}
             {err && <span>Bir Hata Oluştu.</span>}
           </form>
         </div>
