@@ -11,7 +11,7 @@
     border-radius: 10px;
     align-items: center;
 
-    .righta {
+    .right_register {
       flex-basis: 51%;
       background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)),
         url("https://images.pexels.com/photos/4881619/pexels-photo-4881619.jpeg?auto=compress&cs=tinysrgb&w=1600")
@@ -50,7 +50,7 @@
       }
     }
 
-    .lefta {
+    .left_register {
       display: flex;
       flex-basis: 50%;
       flex-direction: column;
@@ -98,16 +98,28 @@
           margin-top: 20px;
           gap: 10px;
           img {
-            width: 32px;
+            width: 26px;
+          }
+          span {
+            font-size: 14px;
           }
           .profil {
-            border: 2px solid black;
             border-radius: 50%;
             width: 40px;
             height: 40px;
           }
         }
       }
+    }
+    .loading {
+      font-size: 14px;
+      margin-top: 10px;
+      display: flex;
+    }
+    .err {
+      font-size: 14px;
+      margin-top: 10px;
+      display: flex;
     }
   }
 }

@@ -43,8 +43,12 @@ const Login = () => {
             <input type="email" placeholder="E-posta" />
             <input type="password" placeholder="Parola" />
             <button>Giriş Yap!</button>
-            {err && <span>Bir Hata Oluştu.</span>}
           </form>
+          {loading ? (
+            <p className="loading">Lütfen bekleyiniz... </p>
+          ) : (
+            err && <p className="err">Bir hata oluştu.</p>
+          )}
         </div>
       </div>
     </div>

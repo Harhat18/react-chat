@@ -80,7 +80,7 @@ const Register = () => {
   return (
     <div className="formContainer">
       <div className="formWrapper">
-        <div className="lefta">
+        <div className="left_register">
           <div className="titleContainer">
             <span className="title">Yeni Üye Kayıt</span>
           </div>
@@ -105,13 +105,15 @@ const Register = () => {
                 <span>Profil resmini seç</span>
               </label>
             )}
-
             <button disabled={loading}>Üye Ol!</button>
-            {loading && <p>Resim yükleniyor lütfen bekleyin... </p>}
-            {err && <span>Bir Hata Oluştu.</span>}
           </form>
+          {loading ? (
+            <p className="loading">Lütfen bekleyiniz... </p>
+          ) : (
+            err && <p className="err">Bir hata oluştu.</p>
+          )}
         </div>
-        <div className="righta">
+        <div className="right_register">
           <h1>React Chat</h1>
           <p>Mesajlaşmanın tadını çıkar</p>
           <span>Zaten üyeliğin var mı ?</span>
