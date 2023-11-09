@@ -1,7 +1,7 @@
 .navbar {
   display: flex;
   align-items: center;
-  background-color: #514e7b;
+  background-color: #2c2c42;
   height: 50px;
   padding: 10px;
   justify-content: space-between;
@@ -19,6 +19,9 @@
       display: flex;
       align-items: center;
       gap: 10px;
+    }
+    span {
+      text-transform: capitalize;
     }
     img {
       background-color: #eae1d7;

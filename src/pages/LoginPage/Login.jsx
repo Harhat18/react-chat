@@ -6,7 +6,7 @@ const Login = () => {
   const { err, loading, handleSubmit } = useLoginLogic();
 
   return (
-    <div className="formContainer">
+    <div className="formContainer_login">
       <div className="formWrapper">
         <div className="left">
           <h1>React Chat</h1>

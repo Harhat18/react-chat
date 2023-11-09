@@ -7,7 +7,7 @@ const Register = () => {
     useRegisterLogic();
 
   return (
-    <div className="formContainer">
+    <div className="formContainer_register">
       <div className="formWrapper">
         <div className="left_register">
           <div className="titleContainer">

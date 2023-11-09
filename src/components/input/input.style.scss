@@ -12,20 +12,26 @@
     color: #2f2d52;
     font-size: 18px;
     &::placeholder {
-      color: lightgray;
+      color: gray;
     }
   }
   .send {
     display: flex;
     align-items: center;
-    gap: 10px;
-    color: lightgray;
+    gap: 4px;
+    color: gray;
     cursor: pointer;
     button {
       border: none;
+      border-radius: 5px;
       padding: 10px 15px;
       color: white;
-      background-color: #514e7b;
+      background-color: #2c2c42;
+    }
+
+    .image {
+      margin-right: 6px;
+      margin-top: 4px;
     }
   }
 }

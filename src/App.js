@@ -1,4 +1,4 @@
-import "./style.scss";
+import "./style/style.scss";
 import Register from "./pages/RegisterPage/Register";
 import Login from "./pages/LoginPage/Login";
 import Home from "./pages/HomePage/Home";

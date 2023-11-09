@@ -10,12 +10,12 @@ const Input = () => {
     <div className="input">
       <input
         type="text"
-        placeholder="Type something..."
+        placeholder="Mesaj Yaz..."
         onChange={(e) => setText(e.target.value)}
         value={text}
       />
       <div className="send">
-        <IoIosAttach size={20} />
+        <IoIosAttach className="attach" size={20} />
         <input
           type="file"
           style={{ display: "none" }}
@@ -23,7 +23,7 @@ const Input = () => {
           onChange={(e) => setImg(e.target.files[0])}
         />
         <label htmlFor="file">
-          <RiImageAddLine size={20} />
+          <RiImageAddLine className="image" size={20} />
         </label>
         <button onClick={handleSend}>Gönder</button>
       </div>
