@@ -12,8 +12,8 @@ const Navbar = () => {
       {/* <span className="logo">React Chat</span> */}
       <div className="user">
         <div className="userCard">
-          <img src={currentUser.photoURL} alt="" />
-          <span>{currentUser.displayName}</span>
+          <img src={currentUser?.photoURL} alt="" />
+          <span>{currentUser?.displayName}</span>
         </div>
 
         <button>
