@@ -4,7 +4,7 @@ Anlık mesajlaşma uygulaması
 
 deploy : https://reactchatrc.netlify.app/login
 
-![Ekran Resmi 2023-11-09 23 52 56-min](https://github.com/Harhat18/react-chat/assets/111196660/9471a9e3-3113-4dbe-bfab-52d9f9c0f814)
-![Ekran Resmi 2023-11-09 23 53 02-min](https://github.com/Harhat18/react-chat/assets/111196660/fa093953-4ff1-4102-bd46-1d6032061e9d)
-![Ekran Resmi 2023-11-09 23 53 36-min](https://github.com/Harhat18/react-chat/assets/111196660/dae96247-ed46-4295-81ff-482eec3b6915)
-![Ekran Resmi 2023-11-09 23 53 55-min](https://github.com/Harhat18/react-chat/assets/111196660/7f3239df-47ae-468f-9ff1-5688fe22a0c7)
+![Ekran Resmi 2023-11-09 23 57 02](https://github.com/Harhat18/react-chat/assets/111196660/3d67f9cf-fee6-427f-82c1-4974f5161033)
+![Ekran Resmi 2023-11-09 23 57 11](https://github.com/Harhat18/react-chat/assets/111196660/1be57689-55c5-425f-a457-6041e48ae4c7)
+![Ekran Resmi 2023-11-09 23 57 44](https://github.com/Harhat18/react-chat/assets/111196660/1f993ebd-b0e5-452f-a450-ed64f5f8693c)
+![Ekran Resmi 2023-11-09 23 58 22 (1)](https://github.com/Harhat18/react-chat/assets/111196660/ce40ab1c-6a38-48b8-88b4-83577278accd)
