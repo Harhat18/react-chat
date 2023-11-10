@@ -1,5 +1,6 @@
 # react-chat
 
+<<<<<<< HEAD
 React ve firebase kullanılarak geliştirilmiş anlık mesajlaşma uygulaması. 
 
 deploy : (https://reactchatrc.netlify.app)
@@ -18,4 +19,7 @@ npm start
 yada 
 yarn start ile dosyamızın localde çalışmasını sağlayabiliriz.
 
+=======
+deploy : https://reactchatrc.netlify.app/login
+>>>>>>> 20b300f (Add general control)
 

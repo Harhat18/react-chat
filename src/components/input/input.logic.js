@@ -72,12 +72,19 @@ const useInputLogic = () => {
     setImg(null);
   };
 
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter" && !event.shiftKey) {
+      event.preventDefault(); // Prevents a new line in the text area
+      handleSend();
+    }
+  };
   return {
     text,
     setText,
     img,
     setImg,
     handleSend,
+    handleKeyDown,
   };
 };
 

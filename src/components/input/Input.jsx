@@ -4,7 +4,7 @@ import { RiImageAddLine } from "react-icons/ri";
 import useInputLogic from "./input.logic";
 
 const Input = () => {
-  const { text, setText, setImg, handleSend } = useInputLogic();
+  const { text, setText, setImg, handleSend, handleKeyDown } = useInputLogic();
 
   return (
     <div className="input">
@@ -13,6 +13,7 @@ const Input = () => {
         placeholder="Mesaj Yaz..."
         onChange={(e) => setText(e.target.value)}
         value={text}
+        onKeyDown={handleKeyDown}
       />
       <div className="send">
         <IoIosAttach className="attach" size={20} />
