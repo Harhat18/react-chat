@@ -2,9 +2,10 @@ import useSearchLogic from "./search.logic";
 import "./search.style.scss";
 
 const Search = () => {
+ 
   const { err, handleKey, handleSelect, username, setUsername, user } =
     useSearchLogic();
-
+    
   return (
     <div className="search">
       <div className="searcForm">
@@ -28,5 +29,4 @@ const Search = () => {
     </div>
   );
 };
-
 export default Search;
